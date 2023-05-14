@@ -1,0 +1,229 @@
+body {
+    background-color:  hsl(226, 43%, 10%);
+}
+* {
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.hidden{
+    visibility: hidden;
+}
+.pic img {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 70px;
+}
+.pic {
+    padding: 5px;
+}
+.attribution {
+    margin-bottom: 0;
+    padding: 5% 30%;
+}
+.container {
+    margin: 20% 20%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.details {
+    background-color: hsl(246, 80%, 60%);
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 100;
+    height: 70%;
+}
+.details .content{
+    margin: 15px 30px 30px 5px;
+}
+.details .content p{
+    font-size: 13px;
+}
+.profile {
+    color: white;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 12px;
+    height: 440px;
+}
+.profile h1{
+    font-weight: 300;
+}
+.timely {
+    padding: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+    line-height: 25px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.btn{
+    padding: 5px;
+    color: hsl(236, 100%, 87%);
+}
+.timely li:hover{
+    color: white;
+    cursor: pointer;
+}
+.focused{
+    color: white;
+}
+.content p,.previous-time {
+    font-size: 18px;
+    color: hsl(236, 100%, 87%);
+}
+.cards {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: stretch;
+    width: max-content;
+}
+.card {
+    flex-basis: 25%;
+    margin: 10px;
+}
+.cards > div{
+    height: 210px;
+    width: 210px;
+}
+.card .content {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 12px;
+    padding: 20px;
+    height: 85%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.ellipsis-menu{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.card .content:hover{
+    background-color: hsl(235, 39%, 26%);
+    cursor: pointer;
+}
+.work {
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.play {
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.study {
+    background-color:  hsl(348, 100%, 68%);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.exercise {
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.social {
+    background-color: hsl(264, 64%, 52%);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.self-care {
+    background-color: hsl(43, 84%, 65%);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.card-pic{
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+.current-time p{
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+}
+.current-time h1{
+    font-size: 40px;
+    margin: 20px auto 5px;
+    color: white;
+    font-weight: 300;
+}
+.previous-time p{
+    margin: 20px auto;
+    color: hsl(236, 100%, 87%);
+    font-size: 12px;
+    font-weight: 300;
+}
+@media (max-width: 780px) and (min-width: 375px) {
+    .card {
+        flex-wrap: nowrap;
+        flex-basis: 33.333%;
+    }
+}
+@media (max-width: 375px) {
+    .pic img{
+        width: 50px;
+        margin-left: 10px;
+    }
+    .profile .content{
+        font-size: 8px;
+        padding-top: 15px;
+        line-height: 1.3;
+    }
+    .details{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .timely{
+        display: flex;
+        margin: 0;
+        justify-content: space-around;
+    }
+    .profile{
+        height: auto;
+        min-width: 260px;
+    }
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        flex-basis: 100%;
+        min-width: 260px;
+    }
+    .card .content{
+        height: 75%;
+    }
+    .cards .content{
+        display: flex;
+    }
+    .cards .current-time h1{
+        margin-top: 5px;
+        font-size: 22px;
+    }
+    .cards .previous-time p{
+        position: absolute;
+        font-size: 13px;
+        right: 25px;
+        bottom: 10px;
+    }
+    .cards > div{
+        height: 125px;
+    }
+}
