@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://pranavcm-07.github.io/frontend-mentor-challange/](https://your-live-site-url.com)
+- Live Site URL: [https://pranavcm-07.github.io/frontend-mentor-challange/](https://pranavcm-07.github.io/frontend-mentor-challange/)
 
 ### Built with
 
